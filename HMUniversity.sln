@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMUniversity.Profiles", "HMUniversity.Profiles\HMUniversity.Profiles.csproj", "{CDDFE7A9-4842-49D1-9AFD-5ACB42EE182F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDDFE7A9-4842-49D1-9AFD-5ACB42EE182F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDFE7A9-4842-49D1-9AFD-5ACB42EE182F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDFE7A9-4842-49D1-9AFD-5ACB42EE182F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDFE7A9-4842-49D1-9AFD-5ACB42EE182F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
