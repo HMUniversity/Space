@@ -7,15 +7,24 @@ namespace HMUniversity.Profiles
 {
     public class Generator
     {
-        public static string OutputPath { get; set; } = "outs";
+        public Generator()
+        {
+        }
 
-        public static void Run(ProfileCollection pc)
+        public Generator(string output)
+        {
+            OutputPath = output;
+        }
+
+        public string OutputPath { get; set; } = "outs";
+
+        public void Run(ProfileCollection pc)
         {
             var p = pc.Profiles;
             var dic = p.ToDictionary(m => m.Name, Run);
         }
 
-        public static List<string> Run(Profile p)
+        public List<string> Run(Profile p)
         {
             if (Directory.Exists(OutputPath))
                 Directory.Delete(OutputPath, true);

@@ -32,7 +32,7 @@ namespace HMUniversity.Profiles
                 }
             };
 
-            Generator.Run(pc.Profiles[0]);
+            new Generator().Run(pc.Profiles[0]);
         }
     }
 }
