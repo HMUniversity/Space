@@ -7,6 +7,15 @@ namespace HMUniversity.Profiles
     {
         public const string OUTPUT_PATH = "outs";
 
+        public static void Run(ProfileCollection pc)
+        {
+            var p = pc.Profiles;
+            foreach (var m in p)
+            {
+                Run(m);
+            }
+        }
+
         public static void Run(Profile p)
         {
             if (Directory.Exists(OUTPUT_PATH))
