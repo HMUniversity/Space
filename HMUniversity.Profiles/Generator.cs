@@ -38,7 +38,7 @@ namespace HMUniversity.Profiles
                     {
                         var path = Path.Combine(OutputPath, m);
                         Directory.CreateDirectory(path);
-                        var n = CreateRedirectHtml(o.Target, null, 2);
+                        var n = HtmlHelper.CreateRedirectHtml(o.Target, null, 2);
                         File.WriteAllText(Path.Combine(path, "index.html"), n);
                     }
                 }
@@ -47,13 +47,6 @@ namespace HMUniversity.Profiles
             }
 
             return l;
-        }
-
-        public static string CreateRedirectHtml(string target, string bodyHtml = null, int timeout = 0)
-        {
-            bodyHtml ??= @"Redirecting to <a href=""" + target + @""">" + target + @"</a>...";
-            return @"<html><head><meta http-equiv=""refresh"" content=""" + timeout +
-                   @";url=" + target + @"""></head><body>" + bodyHtml + @"</body></html>";
         }
     }
 }
